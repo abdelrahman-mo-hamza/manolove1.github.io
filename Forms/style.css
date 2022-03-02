@@ -1,0 +1,18 @@
+body, html {height: 100%;}
+body{background-image: url(../Media/Cute-Girl.png); height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.img1{width: 550px;}
+li{display: inline-block;
+    font-size: 20px;
+    padding: 20px;}
+
+    
+.login{text-align: center;}    
+.login-head{color: yellowgreen;}
+.age{color: aqua;}
+.signup{text-align: center;}
+.suc{text-align: center; color: yellowgreen;}
