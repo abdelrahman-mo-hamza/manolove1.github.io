@@ -21,3 +21,16 @@ li{display: inline-block;
 .countrylabel{color: aqua;}
 .ageinput{width: 125px;}
 .gender{color: aqua;}
+.login-page{padding: 10px; 
+    padding-top: 1.2%;
+    margin: auto;
+    margin-top: 2%;
+    width: 20%;
+    height: 22%;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-width: 8.5px;
+    border-color: rgba(255, 0, 0, 0.850) rgba(0, 128, 0, 0.850) rgba(0, 0, 255, 0.850) rgba(255, 255, 0, 0.850);
+    border-style: solid;
+
+
+}
