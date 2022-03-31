@@ -40,11 +40,46 @@
       sub => Subscript
       sup => Superscript
     -->
+    <nav class="sticky">
+      <div class="sticky">
+        <a href="https://www.youtube.com/channel/UCAj9UfWqH8XNUSJhO1BbTdA" target="_blank" title="Go To YouTupe Channel">Youtupe</a>
+        <a href="https://www.facebook.com/ManoBaker.Abdulrahman" target="_blank" title="Go To FaceBook Profile">FaceBook</a>
+        <a href="https://twitter.com/Mano_Love_Oo" target="_blank" title="Go To Twitter Profile">Twitter</a>
+        <a href="https://www.instagram.com/mano_love1" target="_blank" title="Go To Instagram Profile">Insta</a>
+        <a href="https://wa.me/message/X3W5HSDEC5GVK1" target="_blank" title="Go To WhatsApp">WhatsApp</a>
+        <div class="clear"></div>
+      </div>
+    </nav>
+    <div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">⇧</button>
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+    </div>
     <header>
       <h1>Mano Oo</h1>
     </header>
     <main>
       <p class="p1"><b>WTF!</b></p>
+      <a href="videos.html" title="Videos" class="videos">Videos</a>
       <br>
       <img class="img1" src="../Media/Ah-Shit.jpg" alt="Shit">
       <br>
@@ -53,13 +88,11 @@
         Your Browser Does Not Support Audio Files
       </audio>
       <br>
-    </main>
-    <nav>
       <video controls width="550" height="400" autoplay poster="../Media/Poster.jpg">
-        <source src="../Media/1.mp4" type="video/mp4">
+        <source src="../Media/blind.mp4" type="video/mp4">
         Your Browser Does Not Support Vedio Files
       </video>
-    </nav>
+    </main>
     <hr>
     <footer>
       <ul> 
