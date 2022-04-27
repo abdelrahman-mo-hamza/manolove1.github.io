@@ -31,15 +31,15 @@
             <form action="done.html" class="signup">
                 <header class="login-head"><h1>ManoOo</h1></header>
                 <div>
-                    <input type="email, number" required
+                    <input class="em" type="email, number" required
                     placeholder="Email Or No." name="email">
                 </div>
                 <br>
                 <div>
-                    <input type="text" required
+                    <input class="em" type="text" required
                     placeholder="UserName" name="User">
                 </div>
-                <br>
+                <hr>
                 <div>
                     <label for="date" class="age">Date of birth:</label>
                     <input id="date" type="date" name="number" class="ageinput" required>
@@ -301,46 +301,45 @@
                         Your Gender:
                     </div>
                     <div>
-                        <input id="male" type="radio" name="male" value="Male">
+                        <input id="male" type="radio" name="gender" value="Male" class="ch">
                         <label for="male">Male</label>
-                        <input id="female" type="radio" name="female" value="Female">
+                        <input id="female" type="radio" name="gender" value="Female" class="ch">
                         <label for="female">Female</label>
                     </div>
                 </div>
-                <br>
+                <hr>
                 <div class="os">
                     <div class="youros">
                         Your Os:
                     </div>
                     <div>
-                        <input id="and" type="radio" name="os" value="Android">
+                        <input class="ch" id="and" type="radio" name="os" value="Android">
                         <label for="and">Android</label>
-                        <input id="ios" type="radio" name="os" value="Ios">
+                        <input class="ch" id="ios" type="radio" name="os" value="Ios">
                         <label for="ios">Ios</label>
                     </div>
                     <div>
-                        <input id="win" type="radio" name="os" value="Windows">
+                        <input class="ch" id="win" type="radio" name="os" value="Windows">
                         <label for="win">Windows</label>
-                        <input id="lin" type="radio" name="os" value="Linux">
+                        <input class="ch" id="lin" type="radio" name="os" value="Linux">
                         <label for="lin">Linux</label>
-                        <input id="mac" type="radio" name="os" value="Mac">
+                        <input class="ch" id="mac" type="radio" name="os" value="Mac">
                         <label for="mac">Mac</label>
                     </div>
                 </div>
-                <br>
-                <div>
-                    <input type="password" required
-                    placeholder="Password" name="password"
-                    min="8">
+                <hr>
+                <div class="pad">
+                    <input class="em" type="password" required
+                    placeholder="Password" name="password" min="8">
                 </div>
                 <br>
                 <div>
-                    <input type="password" required
+                    <input class="em" type="password" required
                     placeholder="Re-Password" name="password"
                     min="8">
                 </div>
                 <br>
-                <input type="submit" value="SginUp">
+                <input class="inbut" type="submit" value="SginUp">
             </form>          
         </main>
     </body>

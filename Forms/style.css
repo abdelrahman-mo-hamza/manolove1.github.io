@@ -1,3 +1,9 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body, html {height: 100%;}
 body{background-image: url(../Media/Cute-Girl.png); height: 100%;
     background-position: center;
@@ -18,18 +24,22 @@ li{display: inline-block;
     
 .login-head{color: yellowgreen;}
 .age{color: aqua;}
-.signup{text-align: center;
-    padding: 10px; 
+.signup{
+    text-align: center;
+    padding: 4%;
     padding-top: 1.2%;
     margin: auto;
     margin-top: 2%;
-    width: 20%;
-    height: 22%;
+    width: 30%;
+    height: 30%;
     background-color: rgba(128, 128, 128, 0.5);
     border-width: 8.5px;
-    border-color: rgba(255, 0, 0, 0.850) rgba(0, 128, 0, 0.850) rgba(0, 0, 255, 0.850) rgba(255, 255, 0, 0.850);
-    border-style: solid;
-
+    /*border-color: rgba(255, 0, 0, 0.850) rgba(0, 128, 0, 0.850) rgba(0, 0, 255, 0.850) rgba(255, 255, 0, 0.850);*/
+    /* border-style: solid; */
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 .suc{text-align: center; color: yellowgreen;}
 .youros{color: aqua;}
@@ -37,25 +47,37 @@ li{display: inline-block;
 .countrylabel{color: aqua;}
 .ageinput{width: 125px;}
 .gender{color: aqua;}
-.login-page{padding: 10px; 
+.login-page{
+    padding: 10%;
     padding-top: 1.2%;
     margin: auto;
     margin-top: 2%;
-    width: 20%;
-    height: 25%;
+    width: 30%;
+    height: 30%;
     background-color: rgba(128, 128, 128, 0.5);
     border-width: 8.5px;
     border-color: rgba(255, 0, 0, 0.850) rgba(0, 128, 0, 0.850) rgba(0, 0, 255, 0.850) rgba(255, 255, 0, 0.850);
-    border-style: solid;
+    /* border-style: solid; */
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 .br{
     padding: 10px;
     display: block;
+    
 }
 main form header h1{text-shadow: 1px 1px 2px blue;}
-.login{text-align: center;
-
+.login{
+    text-align: center;
+    margin: auto;
 }    
+
+.login-button {
+    display: block;
+    margin: auto;
+}
 
 .sticky{
     background-color: rgba(255, 0, 0, 0.589);
@@ -113,7 +135,7 @@ main form header h1{text-shadow: 1px 1px 2px blue;}
     background-color: rgba(255, 0, 0, 0.76);
     width: 120px;
     margin-left: 0.5%;
-    margin-bottom: 0.5%;
+    margin-bottom: 1%;
     color: white;
     display: inline-block;
     border-radius: 5px;
@@ -123,15 +145,40 @@ main form header h1{text-shadow: 1px 1px 2px blue;}
     border-width: 3px;
     border-color: black;
     border-style: solid;
+    box-shadow: inset 0px 0px 20px 19px #000; 
   }
 
   .sss{
-      width: calc(90.5% / 3);
-      height: 356px;
-      margin: 1%;
-      display: inline-block;
-      border-radius: 15px;
-      border-width: 5px;
-      border-color: darkblue;
-      border-style: solid;
+    width: fit-content;
+    height: 356px;
+    margin: 1%;
+    /* display: inline-block; */
+    display: inline-block;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: darkblue;
+    border-style: solid;  
+}
+
+  .ch:checked + label{
+      color: red;
+  }
+
+  a:visited{
+      color: blueviolet;
+  }
+
+  .em:focus{
+      border-color: rgba(255, 0, 0, 0.685);
+      outline: none;
+  }
+
+  .pad,.os {
+      padding-top: 0.5%;
+  }
+
+  .inbut {
+      width: 100px;
+      margin: auto;
   }
