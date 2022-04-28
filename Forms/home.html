@@ -110,6 +110,30 @@
         <li><a href="https://twitter.com/messages/compose?recipient_id=770895799647662080&ref_src=twsrc%5Etfw" class="twitter-dm-button" data-size="large" data-text="Hello, How Can I Help You Today?" data-screen-name="https://twitter.com/Mano_Love_Oo" data-show-count="false">Message @https://twitter.com/Mano_Love_Oo</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li> 
         <li><a href="https://wa.me/message/X3W5HSDEC5GVK1" target="_blank">WhatsApp</a>
       </ul>
+      <div class="">
+        <div id="paypal-button-container-P-12E04927RK742650CMJVEQGI"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=AeIOcUMo8yiL31FnAMiL2CY-CrAQnKUS2zZ_4xywcf5RcB0UwlXTYXuj5yXjQaedV9vYtXhMxt2cxY6B&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+        <script>
+        paypal.Buttons({
+            style: {
+                shape: 'pill',
+                color: 'blue',
+                layout: 'vertical',
+                label: 'subscribe'
+            },
+            createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                /* Creates the subscription */
+                plan_id: 'P-12E04927RK742650CMJVEQGI'
+                });
+            },
+            onApprove: function(data, actions) {
+                alert(data.subscriptionID); // You can add optional success message for the subscriber here
+            }
+        }).render('#paypal-button-container-P-12E04927RK742650CMJVEQGI'); // Renders the PayPal button
+        </script>
+    </div>
+
     </footer>
   </body>
 </html>

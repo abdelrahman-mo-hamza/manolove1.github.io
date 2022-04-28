@@ -13,20 +13,6 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3360734518033731"
-                crossorigin="anonymous"></script>
-                <!-- lol -->
-                <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-3360734518033731"
-                data-ad-slot="4133285158"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
         <main>
             <form action="done.html" class="signup">
                 <header class="login-head"><h1>ManoOo</h1></header>
@@ -342,5 +328,42 @@
                 <input class="inbut" type="submit" value="SginUp">
             </form>          
         </main>
+        <div class="paypal">
+            <div id="paypal-button-container-P-12E04927RK742650CMJVEQGI"></div>
+            <script src="https://www.paypal.com/sdk/js?client-id=AeIOcUMo8yiL31FnAMiL2CY-CrAQnKUS2zZ_4xywcf5RcB0UwlXTYXuj5yXjQaedV9vYtXhMxt2cxY6B&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+            <script>
+            paypal.Buttons({
+                style: {
+                    shape: 'pill',
+                    color: 'blue',
+                    layout: 'vertical',
+                    label: 'subscribe'
+                },
+                createSubscription: function(data, actions) {
+                    return actions.subscription.create({
+                    /* Creates the subscription */
+                    plan_id: 'P-12E04927RK742650CMJVEQGI'
+                    });
+                },
+                onApprove: function(data, actions) {
+                    alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                }
+            }).render('#paypal-button-container-P-12E04927RK742650CMJVEQGI'); // Renders the PayPal button
+            </script>
+        </div>
+        <div>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3360734518033731"
+                crossorigin="anonymous"></script>
+                <!-- lol -->
+                <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-3360734518033731"
+                data-ad-slot="4133285158"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
     </body>
 </html>
